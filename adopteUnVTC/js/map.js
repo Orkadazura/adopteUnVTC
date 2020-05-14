@@ -1,5 +1,5 @@
-var Mulhouse = {lat: 47.7467, lng: 7.3389275};// La localisation de Mulhouse
-var carte = new google.maps.Map( document.getElementById('map'), {zoom: 8, center: Mulhouse});// La carte, centrée sur Mulhouse
+var Versaille = {lat: 48.8, lng: 2.1333};// La localisation de Mulhouse
+var carte = new google.maps.Map( document.getElementById('map'), {zoom: 8, center: Versaille});// La carte, centrée sur Mulhouse
 
 $.getJSON(
     "coordonnees.json",

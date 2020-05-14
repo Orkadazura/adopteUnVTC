@@ -4,6 +4,12 @@ body
     color: #318CE7;
 }
 
+.body2
+{
+    background-image: url(/img/logo.png);
+    background-repeat: no-repeat;
+}
+
 .navbar-nav 
 {
     margin-left: 25%;
@@ -16,13 +22,23 @@ body
 
 #accueil
 {
-    width:50px;
-    height: auto;
+    width:100px;
+    height: 50px;
 }
 .titre
 {
     margin-top: 5%;
     margin-left: 15%;
+}
+
+#resa
+{
+    margin-top: 2%;
+}
+
+.pl
+{
+    margin-left: 1%;
 }
 
 .form-row
@@ -31,4 +47,11 @@ body
     margin-left: 15%;
 }
 
-
+#map
+{
+    margin-top: -20%;
+    margin-right: 1%;
+    height: 400px;
+    width: 55%;
+    float: right;
+}
