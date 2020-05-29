@@ -5,30 +5,34 @@ require "header.php";
 ?>
     <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112402450-1&key="></script>
+        
         <script src="http://maps.googleapis.com/maps/api/js?language=fr"></script>
+        <script src="https://maps.googleapis.com/maps/api/place/nearbysearch/json
+            ?location=48.8,2.1333
+            &key=AIzaSyAudGwwSrGEEUYms1DenjXyxjP8375rYbg">
+        </script>
+        
     </head>  
 
     <body>
         
         <form id="resa" action="post">
             <div class="form-group col-md-5">
-                <input type="text" class="form-control" placeholder="Adresse de départ">
+                <input type="text" class="form-control" name="depart" placeholder="Adresse de départ">
             </div>
 
             <div class="form-group col-md-5">
-                <input type="text" class="form-control" placeholder="Adresse d'arrivée">
+                <input type="text" class="form-control" name="arriver" placeholder="Adresse d'arrivée">
             </div>
             <div>
                 <label class="pl" for="">Nombre de passagers</label>
             <div class="btn-group">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Passager
+                    Passager
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
                     <button class="dropdown-item" type="button">1</button>
                     <button class="dropdown-item" type="button">2</button>
-                    <button class="dropdown-item" type="button">3</button>
-                    <button class="dropdown-item" type="button">4</button>
                 </div>
             </div>
             <br><br>
@@ -55,8 +59,13 @@ require "header.php";
                 </div>
             
         </form>
+
         <div id="map"></div>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAudGwwSrGEEUYms1DenjXyxjP8375rYbg&libraries=places"></script>
+        <script src="js/map.js"></script>
         
-        <script async src="js/map.js"></script>
+        
+        
 
         
