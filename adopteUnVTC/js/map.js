@@ -10,3 +10,13 @@ function initMap(){
         zoom: 8
     });
 }
+
+google.maps.event.addDomListener(window,'load',initMap);
+
+var input = document.getElementById('dep');
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+var input = document.getElementById('arr');
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+var autocomplete = new google.maps.places.Autocomplete(input, options);
